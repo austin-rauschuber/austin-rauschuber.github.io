@@ -1,0 +1,141 @@
+@-webkit-keyframes fadeUp { from { opacity:0;  margin-top:50px;} to { opacity:1; margin-top:10px;} }
+@-moz-keyframes fadeUp { from { opacity:0;  margin-top:50px;} to { opacity:1; margin-top:10px;} }
+@keyframes fadeUp { from { opacity:0;  margin-top:50px;} to { opacity:1; margin-top:10px;} }
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1;} }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1;} }
+
+
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	background: url("footer_lodyas.png");
+}
+.header{
+	background-color:  #00688B;
+}
+.toolbar{
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:  #00688B;
+	border-radius: 0px 0px 10px 10px;
+}
+.block{
+
+	display: inline-block;
+	width: -moz-calc(25% - 25px);
+    width: -webkit-calc(25% - 25px);
+    width: calc(25% - 25px);
+	text-align: center;
+	font-size: 30px;
+	border-radius: 20px;
+	color:#fff;
+	padding: 10px 0;
+	margin: 5px 0;
+	border: #00688B solid 2px;
+	transition: background-color .5s, border .5s;
+}
+.block:hover{
+	background-color: #50A6C2;
+	border: #003D79 solid 2px;
+
+}
+
+.textbox{
+	opacity: 0;
+	margin-top: 50px;
+	-webkit-animation:fadeUp ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ 	-moz-animation:fadeUp ease-in 1;
+ 	animation:fadeUp ease-in 1;
+ 
+ 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ 	-moz-animation-fill-mode:forwards;
+	 animation-fill-mode:forwards;
+ 
+ 	-webkit-animation-duration:.75s;
+ 	-moz-animation-duration:.75s;
+ 	animation-duration:.75s;
+
+
+
+	width: 980px;
+	height: calc(100% - 210px);
+	background: #D1D1D1;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+}
+
+.resume{
+	height:100% ;
+	width: 980px;
+	margin: 0 auto;
+	display: block;
+}
+.footerholder{
+ 	background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+} 
+.footer{
+	opacity: 1;
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ 	-moz-animation:fadeIn ease-in 1;
+ 	animation:fadeIn ease-in 1;
+ 
+ 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ 	-moz-animation-fill-mode:forwards;
+	 animation-fill-mode:forwards;
+ 
+ 	-webkit-animation-duration:.75s;
+ 	-moz-animation-duration:.75s;
+ 	animation-duration:.75s;
+	background: none repeat scroll 0 0 #494949;
+
+	font-size: 20px;
+	color:#fff;
+	margin: auto;
+	width: 600px;
+	height:100px;
+	border-radius: 8px 8px 0 0;
+}
+
+.footerText{
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+.socialMedia{
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	margin: 5px;
+	transition: all ease .3s;
+}
+.socialMedia:hover{
+	background-position: 0 -48px
+}
+
+
+.facebook{
+	background: url("facebook.png") 0 0;
+}
+.twitter{
+	background: url("twitter.png") 0 0;
+
+}
+.linkedIn{
+	background: url("linkedin.png") 0 0;
+
+}
+
+a{
+	text-decoration: none;
+	
+}
+body{
+	margin: 0;
+}
