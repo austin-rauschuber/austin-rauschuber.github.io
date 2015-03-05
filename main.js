@@ -1,4 +1,5 @@
 var main = function(){
+    $(".ui-loader").hide()
     $('.block').click(function(event){
         var index = $('.block').index(this);
         var $current = $('.current');
