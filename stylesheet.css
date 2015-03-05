@@ -107,6 +107,16 @@ body{
 	margin: 0 auto;
 	display: block;
 }
+
+.swipeBox{
+    height:100%;
+    width:980px;
+    margin: 0 auto;
+    rigth: 0;
+    left: 0;
+    z-index: 50;
+    position: absolute; 
+}
 .footerholder{
  	background: none repeat scroll 0 0 transparent;
     bottom: 0;
