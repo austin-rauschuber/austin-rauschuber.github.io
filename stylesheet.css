@@ -65,6 +65,7 @@ body{
     border-right-color: #999;
     border-left-color: #999;
     border-bottom-color: #777;
+    overflow-y: auto;
 }
 
 .current{
