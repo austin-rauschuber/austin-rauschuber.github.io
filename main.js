@@ -78,6 +78,15 @@ var main = function(){
             $current.removeClass('current');
         });
     });
+    
+    
+    $('.projectLink').on("click", function (event){
+         var index = $('.projectLink').index(this);
+        $targetHeader = $('.project').eq(index);
+         $(".textbox").animate({ scrollTop: $targetHeader.offset().top - 80 }, "slow");
+        
+        
+    });
 }
 
 $(document).ready(main);
