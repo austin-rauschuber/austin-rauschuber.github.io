@@ -127,6 +127,13 @@ body{
     background: #888;
     text-align: center;
     border-bottom: 2px solid black;
+    position:absolute;
+}
+
+.projects{
+    height: calc(100% - 50px);
+    overflow-y:scroll;
+    margin-top: 50px;
 }
 
 .projectLink{

@@ -83,7 +83,7 @@ var main = function(){
     $('.projectLink').on("click", function (event){
          var index = $('.projectLink').index(this);
         $targetHeader = $('.project').eq(index);
-         $(".textbox").animate({ scrollTop: $targetHeader.offset().top - 80 }, "slow");
+         $(".projects").animate({ scrollTop: $targetHeader.offset().top + $(".projects").scrollTop() - 120 }, "slow");
         
         
     });
