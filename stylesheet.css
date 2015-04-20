@@ -238,7 +238,7 @@ h1 {
 }
 
 h2 {
-    font-family: Georgia, Times, sans-serif;
+    font-family: 'Oswald', Georgia, Times, sans-serif;
     font-size: 25px;
     line-height: 45px;
 }
@@ -250,7 +250,7 @@ h3 {
 }
  
 p {
-    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 25px;
 }
