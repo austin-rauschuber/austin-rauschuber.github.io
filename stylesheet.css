@@ -15,6 +15,7 @@ body{
 }
 .header{
     border-top: 10px solid #50A6C2;
+    transition: border-top-color .5s;
 }
 .toolbar{
 	width: 980px;
@@ -41,9 +42,24 @@ body{
 
 }
 
-.currentblock{
+.currentblock.block:nth-child(1){
     background-color: #50A6C2;
+}
 
+.currentblock.block:nth-child(2){
+    background-color: #5950c2;
+}
+
+.currentblock.block:nth-child(3){
+    background-color: #b250c2;
+}
+
+.currentblock.block:nth-child(4){
+    background-color: #c25059;
+}
+
+.currentblock.block:nth-child(5){
+    background-color: #c2b450;
 }
 
 .currentblock:hover{
@@ -123,17 +139,15 @@ body{
 
 .projectHead{
     width: calc(100% - 35px);
-    height: 45px;
     background: #888;
     border-bottom: 2px solid black;
-    position:absolute;
     padding-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .projects{
-    height: calc(100% - 50px);
-    overflow-y:scroll;
-    margin-top: 47px;
+    overflow-y:auto;
 }
 
 .projectLink{
@@ -189,8 +203,6 @@ body{
 	width: 600px;
     max-width:100%;
 	height:100px;
-	border-radius: 8px 8px 0 0;
-    
 }
 
 
@@ -206,20 +218,18 @@ body{
 	margin: 5px;
 	transition: all ease .3s;
 }
-.socialMedia:hover{
-	background-position: 0 -48px
-}
 
-
-.facebook{
-	background: url("facebook.png") 0 0;
+.researchGate{
+	background: url("Images/researchGate.png") 0 0;
+    background-size: 100%;
 }
 .twitter{
 	background: url("twitter.png") 0 0;
 
 }
 .linkedIn{
-	background: url("linkedin.png") 0 0;
+	background: url("Images/linkedin.png") 0 0;
+    background-size: 100%;
 
 }
 
